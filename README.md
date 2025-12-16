@@ -39,6 +39,11 @@ For detailed installation instructions, please refer to [INSTALL.md](INSTALL.md)
    cd mask2former/modeling/pixel_decoder/ops
    sh make.sh
    ```
+## Model Preparation
+
+1. Download the RoBERTa-base model from [Hugging Face](https://huggingface.co/FacebookAI/roberta-base) and place the model files under the `roberta-base` folder.
+
+2. Download the pre-trained model weights and place them in the main directory.
 
 ## Data Preparation
 

@@ -1,0 +1,8 @@
+# ninja log v6
+6	9983	1738860719000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.o	273d0351e4afe87d
+7	23871	1738860719000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.o	4b02f663cddf97cd
+5	34218	1738860719000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/vision.o	ddf54d69a94f7c6f
+171	16915	1739641509000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/vision.o	87e96f403a778bc0
+81	4074	1739647136000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.o	d78ed2c2b36a59b3
+80	22715	1739647136000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/vision.o	c970fb02e0f32a32
+71	40343	1739647362000000000	/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/build/temp.linux-x86_64-3.8/home2020/home/icube/kunyuan/MeViS/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.o	c8c4dab48c4f0f61

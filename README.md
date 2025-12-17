@@ -114,7 +114,7 @@ python train_net_SurgRef.py \
 
 ## Evaluation
 
-### Evaluate on EndoVis
+### Evaluate on EndoVis-IM17/18
 
 ```bash
 python train_net_SurgRef.py \

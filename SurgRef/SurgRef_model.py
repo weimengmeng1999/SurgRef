@@ -338,13 +338,13 @@ class SurgRef(nn.Module):
         # Ensure lang_feat_sentence batch dimension matches images.tensor
         # if lang_feat_sentence.shape[0] != images.tensor.shape[0]:
         #     factor = images.tensor.shape[0] // lang_feat_sentence.shape[0]
-        #     lang_feat_sentence = lang_feat_sentence.repeat(factor, 1, 1)  # ✅ Correctly expand batch dimension
+        #     lang_feat_sentence = lang_feat_sentence.repeat(factor, 1, 1)
 
         # if lang_mask.shape[0] != images.tensor.shape[0]:
         #     if lang_mask.dim() == 2:  # (B, 40)
-        #         lang_mask = lang_mask.repeat(factor, 1)  # ✅ Only expand batch dimension
+        #         lang_mask = lang_mask.repeat(factor, 1)
         #     elif lang_mask.dim() == 3:  # (B, 40, 1)
-        #         lang_mask = lang_mask.repeat(factor, 1, 1)  # ✅ Only expand batch dimension
+        #         lang_mask = lang_mask.repeat(factor, 1, 1) 
 
         # print(f"Fixed lang_feat_sentence shape: {lang_feat_sentence.shape}")
         # print(f"Fixed lang_mask shape: {lang_mask.shape}")

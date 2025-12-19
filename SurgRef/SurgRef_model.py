@@ -1,7 +1,6 @@
 ###########################################################################
-# Created by: NTU
-# Email: heshuting555@gmail.com
-# Copyright (c) 2023
+# Modified from: NTU
+# Author: Meng Wei
 ###########################################################################
 
 from typing import Tuple
@@ -184,6 +183,8 @@ class SurgRef(nn.Module):
                 hidden_dim=cfg.MODEL.KEYFRAME_SELECTOR.HIDDEN_DIM, 
                 top_k_ratio=cfg.MODEL.KEYFRAME_SELECTOR.TOP_K_RATIO  
             )
+        if use_keyframe_selection:
+            weight_dict["loss_keyframe"] = 0.5
 
         # Vita
         num_classes = sem_seg_head.num_classes
@@ -488,6 +489,8 @@ class SurgRef(nn.Module):
                 clip_targets_selected.append(selected_clip_target)
             
             clip_targets_for_loss = clip_targets_selected
+
+            keyframe_selector_loss = (1.0 - selected_scores).mean()
             
         else:
             print("No keyframe selection/ evaluation")
@@ -507,6 +510,8 @@ class SurgRef(nn.Module):
             else:
                 # remove this loss if not specified in `weight_dict`
                 losses.pop(k)
+        if keyframe_selector_loss is not None:
+            losses['loss_keyframe'] = keyframe_selector_loss * 0.01
         # print(f"\nDEBUG BEFORE VITA CRITERION:")
         # print(f"vita_outputs['pred_masks'] shape: {vita_outputs['pred_masks'].shape}")
         # print(f"mask_features shape: {mask_features.shape}")
